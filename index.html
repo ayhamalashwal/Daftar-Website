@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101b32">
+  <meta name="description" content="Daftar is a simple, offline-first shop ledger for customers, suppliers, and multi-currency business records.">
+  <title>Daftar — Your business, in order.</title>
+  <link rel="icon" href="assets/icon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="theme-fix.css">
+  <link rel="stylesheet" href="final-fixes.css">
+</head>
+<body>
+  <div class="announcement"><span class="announcement-dot"></span><span data-i18n="announcement">Made for the people who keep business moving.</span></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Daftar home">
+      <span class="brand-mark" aria-hidden="true"><img src="assets/icon.png" alt=""></span>
+      <span class="brand-name">daftar</span>
+    </a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#features" data-i18n="navFeatures">Features</a>
+      <a href="#screenshots" data-i18n="navPreview">App preview</a>
+      <a href="#how" data-i18n="navHow">Getting started</a>
+    </nav>
+    <div class="header-actions">
+      <label class="language-wrap" aria-label="Select language"><span class="sr-only">Language</span>
+        <select id="languageSelect">
+          <option value="en">EN</option><option value="ar">العربية</option><option value="fr">FR</option>
+        </select>
+      </label>
+      <div class="download-menu"><button class="button button-small button-primary download-menu-trigger" type="button" aria-expanded="false" data-i18n="getApp">Get Daftar <span aria-hidden="true">↗</span></button></div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-icon">✳</span><span data-i18n="eyebrow">A simpler way to keep your books</span></div>
+        <h1 data-i18n-html="heroTitle">Your business,<br><span class="gradient-text">in good order.</span></h1>
+        <p class="hero-lede" data-i18n="heroText">Keep track of customers, suppliers, cash movements, and balances without the paper clutter. Daftar is built for the everyday reality of small businesses.</p>
+        <div class="hero-actions">
+          <div class="download-menu"><button class="button button-primary button-large download-menu-trigger" type="button" aria-expanded="false"><span class="download-icon">↓</span><span data-i18n="downloadAndroid">Download for Android</span></button></div>
+          <a class="button button-quiet button-large" href="#screenshots"><span data-i18n="explore">Explore the app</span><span aria-hidden="true">↘</span></a>
+        </div>
+        <div class="hero-proof"><div class="proof-avatars" aria-hidden="true"><span>ي</span><span>D</span><span>د</span></div><p data-i18n="heroProof">Designed for shopkeepers, traders, and small businesses.</p></div>
+        <div class="hero-chips"><span><i class="chip-dot green"></i><span data-i18n="chipOffline">Offline-first</span></span><span><i class="chip-dot blue"></i><span data-i18n="chipLanguages">3 languages</span></span><span><i class="chip-dot gold"></i><span data-i18n="chipCurrencies">Multi-currency</span></span></div>
+      </div>
+      <div class="hero-visual" aria-label="Daftar app preview">
+        <div class="visual-orbit orbit-one"></div><div class="visual-orbit orbit-two"></div>
+        <div class="visual-label label-top"><span class="label-icon">↗</span><span><strong data-i18n="floatingLedger">Clear records</strong><small data-i18n="floatingLedgerSub">Every transaction, in one place</small></span></div>
+        <div class="phone-frame hero-phone">
+          <div class="phone-notch"></div><img src="assets/screenshots/transaction-history.jpeg" alt="Daftar transaction history screen">
+        </div>
+        <div class="floating-card currency-card"><span class="mini-card-icon">◎</span><span><strong>YER · USD · SAR</strong><small data-i18n="currencyCard">Three currencies. Separate balances.</small></span><span class="status-check">✓</span></div>
+        <div class="floating-card backup-card"><span class="backup-symbol">☁</span><span><strong data-i18n="backupTitle">Your records, backed up</strong><small data-i18n="backupSub">Google Drive backup option</small></span></div>
+        <div class="hero-spark spark-one">✦</div><div class="hero-spark spark-two">✳</div>
+      </div>
+    </section>
+
+    <section class="trust-strip"><div class="trust-inner"><span data-i18n="builtFor">MADE FOR EVERYDAY BUSINESS</span><div class="trust-item"><span>01</span><b data-i18n="trustCustomers">Customer accounts</b></div><div class="trust-item"><span>02</span><b data-i18n="trustSuppliers">Supplier accounts</b></div><div class="trust-item"><span>03</span><b data-i18n="trustCash">Cash in & cash out</b></div><div class="trust-item"><span>04</span><b data-i18n="trustRecords">Reports & exports</b></div></div></section>
+
+    <section id="features" class="features-section section-shell section-pad">
+      <div class="section-heading">
+        <div><div class="eyebrow"><span class="eyebrow-icon">✳</span><span data-i18n="featuresEyebrow">Less paperwork. More clarity.</span></div><h2 data-i18n-html="featuresTitle">The essentials of your business.<br><span class="muted-title">All in one place.</span></h2></div>
+        <p data-i18n="featuresIntro">From the first entry of the day to the end-of-month report, Daftar helps make your records easier to follow.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card feature-large"><div class="feature-top"><span class="feature-icon icon-mint">↔</span><span class="feature-index">01 / LEDGERS</span></div><h3 data-i18n="feature1Title">Customers & suppliers</h3><p data-i18n="feature1Text">Keep account histories organized, see who owes what, and find past transactions without flipping through notebooks.</p><div class="ledger-illustration"><div class="ledger-line"><span class="ledger-avatar">ع</span><span class="ledger-name"><b data-i18n="sampleCustomer">Customer account</b><small data-i18n="sampleRecent">Recent transaction</small></span><span class="ledger-amount positive">+ 12,500 <small>YER</small></span></div><div class="ledger-line"><span class="ledger-avatar alt">م</span><span class="ledger-name"><b data-i18n="sampleSupplier">Supplier account</b><small data-i18n="sampleHistory">Account history</small></span><span class="ledger-amount neutral">− 35 <small>USD</small></span></div><div class="ledger-line"><span class="ledger-avatar blue-avatar">س</span><span class="ledger-name"><b data-i18n="sampleAccount">Business account</b><small data-i18n="sampleBalance">Balance summary</small></span><span class="ledger-status">● <span data-i18n="sampleSaved">Organized</span></span></div></div></article>
+        <article class="feature-card"><div class="feature-top"><span class="feature-icon icon-blue">◉</span><span class="feature-index">02 / CURRENCIES</span></div><h3 data-i18n="feature2Title">Balances that make sense</h3><p data-i18n="feature2Text">Track Yemeni rials, US dollars, and Saudi riyals independently where each currency keeps its own balance.</p><div class="currency-ledger"><div><span class="currency-code">YER</span><span class="currency-name">ريال يمني</span><span class="currency-dash">—</span></div><div><span class="currency-code">USD</span><span class="currency-name">US Dollar</span><span class="currency-dash">—</span></div><div><span class="currency-code">SAR</span><span class="currency-name">Saudi Riyal</span><span class="currency-dash">—</span></div></div></article>
+        <article class="feature-card"><div class="feature-top"><span class="feature-icon icon-gold">▣</span><span class="feature-index">03 / INVENTORY</span></div><h3 data-i18n="feature3Title">Barcode scanning</h3><p data-i18n="feature3Text">Scan a product barcode to help find and manage items faster when recording a transaction.</p><div class="barcode-art" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="barcode-caption"><span class="scan-pulse"></span><span data-i18n="scanCaption">Ready to scan</span></div></article>
+        <article class="feature-card"><div class="feature-top"><span class="feature-icon icon-purple">↗</span><span class="feature-index">04 / SHARING</span></div><h3 data-i18n="feature4Title">Receipts & reminders</h3><p data-i18n="feature4Text">Share transaction receipts and account reminders through WhatsApp, with clear amounts and currency balances.</p><div class="message-preview"><div class="message-head"><span class="message-avatar">D</span><span><b>Daftar</b><small data-i18n="messageBusiness">Business receipt</small></span><span class="message-tick">✓✓</span></div><div class="message-bubble"><b data-i18n="messageReceipt">Transaction receipt</b><span data-i18n="messageAmount">Amount: 5,000 YER</span><span data-i18n="messageBalance">Balance summary included</span><small>10:42</small></div></div></article>
+        <article class="feature-card feature-wide"><div class="feature-top"><span class="feature-icon icon-coral">▤</span><span class="feature-index">05 / REPORTS</span></div><div class="wide-content"><div><h3 data-i18n="feature5Title">Your records, ready to share</h3><p data-i18n="feature5Text">Export your information to Excel, CSV, or PDF for reviewing, printing, and keeping a copy of your business records.</p></div><div class="export-files"><div class="export-file"><span class="file-icon pdf">PDF</span><span><b>Report.pdf</b><small data-i18n="fileReady">Ready to export</small></span><span class="file-arrow">↗</span></div><div class="export-file"><span class="file-icon xls">XLS</span><span><b>Accounts.xlsx</b><small data-i18n="fileReady">Ready to export</small></span><span class="file-arrow">↗</span></div><div class="export-file"><span class="file-icon csv">CSV</span><span><b>Records.csv</b><small data-i18n="fileReady">Ready to export</small></span><span class="file-arrow">↗</span></div></div></div></article>
+        <article class="feature-card feature-wide backup-feature"><div class="feature-top"><span class="feature-icon icon-sky">☁</span><span class="feature-index">06 / BACKUP</span></div><div class="wide-content"><div><h3 data-i18n="feature6Title">A backup when you need one</h3><p data-i18n="feature6Text">Use the Google Drive backup feature to keep a copy of your records. Backups require signing in and an internet connection.</p></div><div class="cloud-illustration"><div class="cloud-shape">☁</div><div class="cloud-ring"></div><div class="cloud-file">DB<span>✓</span></div><div class="cloud-caption" data-i18n="backupIllustration">Backup file</div></div></div></article>
+      </div>
+    </section>
+
+    <section id="screenshots" class="screens-section">
+      <div class="section-shell section-pad">
+        <div class="section-heading screenshot-heading"><div><div class="eyebrow"><span class="eyebrow-icon">✳</span><span data-i18n="previewEyebrow">A look inside</span></div><h2 data-i18n-html="previewTitle">Simple screens.<br><span class="muted-title">Useful details.</span></h2></div><p data-i18n="previewIntro">Explore the real interface. Daftar keeps the important actions close at hand.</p></div>
+        <div class="screenshot-grid">
+          <button class="screenshot-card screenshot-tall" data-image="assets/screenshots/transaction-history.jpeg" data-caption-key="shotHistory" aria-label="Open transaction history screenshot"><span class="screenshot-image"><img src="assets/screenshots/transaction-history.jpeg" alt="Daftar transaction history"></span><span class="screenshot-caption"><span><b data-i18n="shotHistory">Transaction history</b><small data-i18n="shotHistorySub">Review recorded activity</small></span><span class="image-arrow">↗</span></span></button>
+          <button class="screenshot-card" data-image="assets/screenshots/transaction-entry.jpeg" data-caption-key="shotEntry" aria-label="Open transaction entry screenshot"><span class="screenshot-image"><img src="assets/screenshots/transaction-entry.jpeg" alt="Daftar add transaction screen"></span><span class="screenshot-caption"><span><b data-i18n="shotEntry">Add a transaction</b><small data-i18n="shotEntrySub">Record a business movement</small></span><span class="image-arrow">↗</span></span></button>
+          <button class="screenshot-card" data-image="assets/screenshots/products.jpeg" data-caption-key="shotProducts" aria-label="Open product list screenshot"><span class="screenshot-image"><img src="assets/screenshots/products.jpeg" alt="Daftar product list"></span><span class="screenshot-caption"><span><b data-i18n="shotProducts">Product list</b><small data-i18n="shotProductsSub">Find products quickly</small></span><span class="image-arrow">↗</span></span></button>
+          <button class="screenshot-card" data-image="assets/screenshots/barcode-scanner.jpeg" data-caption-key="shotScanner" aria-label="Open barcode scanner screenshot"><span class="screenshot-image"><img src="assets/screenshots/barcode-scanner.jpeg" alt="Daftar barcode scanner"></span><span class="screenshot-caption"><span><b data-i18n="shotScanner">Barcode scanner</b><small data-i18n="shotScannerSub">Scan supported product codes</small></span><span class="image-arrow">↗</span></span></button>
+          <button class="screenshot-card" data-image="assets/screenshots/settings.jpeg" data-caption-key="shotSettings" aria-label="Open settings screenshot"><span class="screenshot-image"><img src="assets/screenshots/settings.jpeg" alt="Daftar settings and export menu"></span><span class="screenshot-caption"><span><b data-i18n="shotSettings">Settings & tools</b><small data-i18n="shotSettingsSub">Language, exports, and backup</small></span><span class="image-arrow">↗</span></span></button>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="how-section section-shell section-pad">
+      <div class="how-panel"><div class="how-copy"><div class="eyebrow eyebrow-light"><span class="eyebrow-icon">✳</span><span data-i18n="howEyebrow">Start in a few steps</span></div><h2 data-i18n-html="howTitle">A clearer ledger<br>starts <span class="mint-text">today.</span></h2><p data-i18n="howText">Download Daftar for Android, install it on your device, and begin organizing your business records.</p><div class="download-menu"><button class="button button-primary button-large download-menu-trigger" type="button"><span class="download-icon">↓</span><span data-i18n="downloadAndroid">Download for Android</span></button></div><p class="download-note" data-i18n="downloadNote">Android APK · Download from the latest release</p></div><div class="steps-list"><div class="step-item"><span class="step-number">01</span><div><h3 data-i18n="step1Title">Download the APK</h3><p data-i18n="step1Text">Open the latest release and download the APK file.</p></div><span class="step-check">↓</span></div><div class="step-item"><span class="step-number">02</span><div><h3 data-i18n="step2Title">Install on Android</h3><p data-i18n="step2Text">If prompted, allow your browser or file manager to install this app.</p></div><span class="step-check">✓</span></div><div class="step-item"><span class="step-number">03</span><div><h3 data-i18n="step3Title">Set up your records</h3><p data-i18n="step3Text">Add customers, suppliers, products, and your first transaction.</p></div><span class="step-check">↗</span></div></div></div>
+    </section>
+
+    <section class="closing-cta section-shell"><div class="cta-decoration">✳</div><div><div class="eyebrow"><span class="eyebrow-icon">✳</span><span data-i18n="ctaEyebrow">Your business deserves clarity</span></div><h2 data-i18n-html="ctaTitle">Make every entry<br> <span class="gradient-text">count.</span></h2><p data-i18n="ctaText">Keep your day-to-day business records in one place with Daftar.</p></div><div class="download-menu"><button class="button button-primary button-large download-menu-trigger" type="button"><span data-i18n="getStarted">Get started with Daftar</span><span aria-hidden="true">↗</span></button></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-main"><a class="brand footer-brand" href="#top"><span class="brand-mark"><img src="assets/icon.png" alt=""></span><span class="brand-name">daftar</span></a><p data-i18n="footerTagline">A practical ledger for everyday business.</p><div class="footer-links"><a href="https://github.com/ayhamalashwal/Daftar-App/releases" target="_blank" rel="noopener" data-i18n="footerDownload">Download</a><a href="#features" data-i18n="navFeatures">Features</a></div></div><div class="footer-bottom"><span>© <span id="year"></span> Daftar</span><span data-i18n="footerNote">Made to help small businesses keep track.</span><a href="#top" data-i18n="backTop">Back to top ↑</a></div></footer>
+
+
+  <div class="download-modal" id="downloadModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="downloadModalTitle">
+    <div class="download-modal-backdrop" data-close-download></div>
+    <section class="download-dialog" role="document">
+      <button class="download-modal-close" type="button" aria-label="Close download options" data-close-download>×</button>
+      <div class="download-dialog-icon"><img src="assets/icon.png" alt="Daftar app icon"></div>
+      <p class="download-dialog-kicker">DAFTAR FOR ANDROID</p>
+      <h2 id="downloadModalTitle">Choose your download</h2>
+      <p class="download-dialog-description">Get the latest Daftar APK from whichever source works best for you.</p>
+      <div class="download-source-list">
+        <a class="download-source github-source" href="https://github.com/ayhamalashwal/Daftar-App/releases" target="_blank" rel="noopener"><span class="source-icon github-icon" aria-hidden="true">GH</span><span class="source-copy"><strong>GitHub Releases</strong><small>Latest version and release notes</small></span><span class="source-arrow" aria-hidden="true">↗</span></a>
+        <a class="download-source drive-source" href="https://drive.google.com/file/d/1L-ZbE-35i61v3_zS7YUpmjucSyrXdX5F/view?usp=sharing" target="_blank" rel="noopener"><span class="source-icon drive-icon" aria-hidden="true">▱</span><span class="source-copy"><strong>Google Drive</strong><small>Download the APK directly</small></span><span class="source-arrow" aria-hidden="true">↗</span></a>
+      </div>
+      <p class="download-dialog-footnote"><span aria-hidden="true">●</span> Android APK · Choose a trusted download source</p>
+    </section>
+  </div>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true"><button class="lightbox-close" id="lightboxClose" aria-label="Close image">×</button><img id="lightboxImage" src="" alt=""><p id="lightboxCaption"></p></div>
+  <script src="script.js"></script>
+</body>
+</html>

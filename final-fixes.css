@@ -1,0 +1,209 @@
+
+/* Final targeted polish: currency rows, screenshot framing, and lightbox close control. */
+.currency-ledger {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0 !important;
+  margin-top: 18px !important;
+  padding: 8px 14px !important;
+  border: 1px solid #41444b !important;
+  border-radius: 14px !important;
+  background: #222428 !important;
+  overflow: hidden !important;
+}
+.currency-ledger > div {
+  display: grid !important;
+  grid-template-columns: 52px minmax(0, 1fr) !important;
+  align-items: center !important;
+  column-gap: 12px !important;
+  min-height: 54px !important;
+  padding: 8px 2px !important;
+  border-bottom: 1px solid #3b3f46 !important;
+}
+.currency-ledger > div:last-child { border-bottom: 0 !important; }
+.currency-ledger .currency-code {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-width: 48px !important;
+  min-height: 30px !important;
+  padding: 0 6px !important;
+  border-radius: 8px !important;
+  background: #353d4b !important;
+  color: #a9c7ff !important;
+  font-size: 11px !important;
+  font-weight: 800 !important;
+  letter-spacing: .06em !important;
+}
+.currency-ledger .currency-name {
+  color: #e1e5ec !important;
+  font-size: 14px !important;
+  line-height: 1.45 !important;
+  white-space: normal !important;
+  overflow-wrap: anywhere !important;
+}
+.currency-ledger .currency-dash { display: none !important; }
+
+/* Keep app screenshots fully visible in their preview cards. */
+.screenshot-image {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: hidden !important;
+  background: #17191d !important;
+}
+.screenshot-image img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  transform: none !important;
+  scale: 1 !important;
+}
+.hero-phone img {
+  object-fit: contain !important;
+  object-position: center center !important;
+}
+
+/* Center the close glyph optically and geometrically in its circle. */
+#lightbox .lightbox-close {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-sizing: border-box !important;
+  width: 46px !important;
+  height: 46px !important;
+  min-width: 46px !important;
+  min-height: 46px !important;
+  padding: 0 0 3px 0 !important;
+  line-height: 1 !important;
+  text-align: center !important;
+  font-family: Arial, sans-serif !important;
+  font-size: 30px !important;
+  font-weight: 400 !important;
+}
+
+/* --- Final visual corrections --- */
+/* No decorative green full stop after the Daftar wordmark anywhere. */
+.brand-period,
+.brand-name::after,
+.brand-name::before { display: none !important; content: none !important; }
+
+/* Currency feature: polished, spacious rows with clear hierarchy. */
+.currency-ledger {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  gap: 9px !important;
+  margin-top: 22px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  overflow: visible !important;
+}
+.currency-ledger > div {
+  display: grid !important;
+  grid-template-columns: 58px minmax(0, 1fr) !important;
+  align-items: center !important;
+  gap: 13px !important;
+  min-height: 64px !important;
+  padding: 10px 14px !important;
+  border: 1px solid #414650 !important;
+  border-radius: 14px !important;
+  background: linear-gradient(110deg, #30343b 0%, #292c31 100%) !important;
+  box-shadow: 0 5px 14px rgba(0,0,0,.12) !important;
+}
+.currency-ledger .currency-code {
+  min-width: 58px !important;
+  min-height: 36px !important;
+  padding: 0 8px !important;
+  border-radius: 10px !important;
+  background: #263b5b !important;
+  color: #c4d7ff !important;
+  font-size: 12px !important;
+  letter-spacing: .04em !important;
+}
+.currency-ledger > div:nth-child(2) .currency-code {
+  background: #3a3153 !important;
+  color: #e0d1ff !important;
+}
+.currency-ledger > div:nth-child(3) .currency-code {
+  background: #24483f !important;
+  color: #b9f0dc !important;
+}
+.currency-ledger .currency-name {
+  color: #f0f2f6 !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  line-height: 1.4 !important;
+}
+
+/* Show the whole phone screenshot instead of cropping/zooming into it. */
+.screenshot-image {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 12px !important;
+  overflow: hidden !important;
+}
+.screenshot-image img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  transform: none !important;
+  scale: 1 !important;
+}
+.hero-phone img {
+  object-fit: contain !important;
+  object-position: center !important;
+}
+
+/* Keep close buttons pinned to the modal/lightbox corner, with the × centered. */
+.lightbox { position: fixed !important; }
+#lightbox .lightbox-close {
+  position: absolute !important;
+  top: max(18px, env(safe-area-inset-top)) !important;
+  right: max(18px, env(safe-area-inset-right)) !important;
+  left: auto !important;
+  z-index: 5 !important;
+  display: grid !important;
+  place-items: center !important;
+  width: 46px !important;
+  height: 46px !important;
+  min-width: 46px !important;
+  min-height: 46px !important;
+  padding: 0 0 3px !important;
+  margin: 0 !important;
+  line-height: 1 !important;
+  font: 400 30px/1 Arial, sans-serif !important;
+  transform: none !important;
+}
+.download-dialog { position: relative !important; }
+.download-dialog .download-modal-close {
+  position: absolute !important;
+  top: 14px !important;
+  right: 14px !important;
+  left: auto !important;
+  z-index: 10 !important;
+  display: grid !important;
+  place-items: center !important;
+  width: 38px !important;
+  height: 38px !important;
+  padding: 0 0 3px !important;
+  line-height: 1 !important;
+  font: 400 26px/1 Arial, sans-serif !important;
+}
+
+/* Arabic is RTL, but leave breathing room between its label and the left-side arrow. */
+[dir="rtl"] .language-wrap select {
+  direction: rtl !important;
+  background-position: left 12px center !important;
+  padding: 12px 14px 12px 38px !important;
+  text-align: right !important;
+}
+@media (max-width: 390px) {
+  [dir="rtl"] .language-wrap select { padding: 9px 10px 9px 34px !important; }
+  .screenshot-image { padding: 10px 8px !important; }
+}
